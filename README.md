@@ -3,20 +3,22 @@
 </p>
 
 # Tweetor
-Basic Twitter Bot to automate Tweets. Uses OpenAI's GPT-3 to randomize messages. Hosted on Akash Decentralized Cloud.
-This example is tested on Linux.
+Basic Twitterbot to automate Tweets. Uses OpenAI's GPT-3 to randomize messages. Hosted on Akash Decentralized Cloud.
+This example is tested on Ubuntu.
 
 ### Live Demo
 MetaBrainz active Twitterbot is based on this example! Example <code><a href="https://twitter.com/metabrainz_io/status/1524751303343104004">Tweet</a></code>
 ## Requirements
+#### Minimum:
+ -  <code><a href="https://docs.docker.com/engine/install/">Docker</a></code>
  -  <code><a href="https://developer.twitter.com">Twitter Developer Account</a></code>
  -  <code><a href="https://openai.com/api/">OpenAI API Account</a></code>
+#### Only needed when hosting on Akash:
  -  <code><a href="https://docs.akash.network/guides/deploy/akashlytics-deploy-installation">Akashlythics</a></code>
  -  <code><a href="https://akash.network/token">AKT Token</a></code>
- -  <code><a href="https://docs.docker.com/engine/install/">Docker</a></code>
 
 ## Preparation
-1. Configure accounts
+1. Setup/Configure Developer accounts
 2. Get the required keys for the environment variables:
 - `TWITTER_API_KEY`
 - `TWITTER_API_SECRET`
