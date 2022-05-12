@@ -9,11 +9,11 @@ This example is tested on Linux.
 ### Live Demo
 MetaBrainz active Twitterbot is based on this example! Example <code><a href="https://twitter.com/metabrainz_io/status/1524751303343104004">Tweet</a></code>
 ## Requirements
- -  Account for <code><a href="https://hub.docker.com/">Docker Hub</a></code>
- -  Account for <code><a href="https://developer.twitter.com">Twitter Developer</a></code>
- -  Account for <code><a href="https://openai.com/api/">OpenAI API</a></code>
- -  Download/Install <code><a href="https://www.akashlytics.com/deploy">Akashlythics</a></code>
- -  Download/Install <code><a href="https://docs.docker.com/get-docker/">Docker</a></code>
+ -  <code><a href="https://developer.twitter.com">Twitter Developer Account</a></code>
+ -  <code><a href="https://openai.com/api/">OpenAI API Account</a></code>
+ -  <code><a href="https://docs.akash.network/guides/deploy/akashlytics-deploy-installation">Akashlythics</a></code>
+ -  <code><a href="https://akash.network/token">AKT Token</a></code>
+ -  <code><a href="https://docs.docker.com/engine/install/">Docker</a></code>
 
 ## Preparation
 1. Configure accounts
@@ -99,4 +99,4 @@ http://127.0.0.1:5500/remove_tweetor/mytweetor
 http://127.0.0.1:5500/remove_all
 ```
 ## DISCLAIMER
-Do not share your public domain (Akash uri) when using this example template! This is a basic example that is coded in one go and meant for experimental purposes only. The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. Use at your own risk.
+Do not share your public domain (Akash uri) when using this example template! This is a basic example that is coded hastily in one go and meant for experimental purposes only. The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. Use at your own risk.
