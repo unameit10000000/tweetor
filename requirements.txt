@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+Flask-Session
+Flask-APScheduler
+requests_oauthlib
+tweepy
+openai

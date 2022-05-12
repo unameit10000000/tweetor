@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweetor - Home</title>
+  <style>
+    .html, body{
+      background-color:#f7f1f0;
+      font-size: 16px;
+      padding:50px;
+    }
+    .title{
+      color: #c41414;
+    }
+    .button {
+      background-color: #c41414;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 20px 20px -10px 0px;
+      cursor: pointer;
+    }
+    .line-input{
+      width:300px;
+      height:35px;
+      padding-left:10px;
+      border:3px solid #c41414;
+    }
+  </style>
+</head>
+<body>
+  <div style="float:right;margin-top:10px;margin-right:50px;">
+    <a href="https://twitter.com/unameit10000000" target="_blank">
+      <img src="../static/tweetor.png" width="100px;"/>
+    </a>
+  </div>
+  <div style="float:right;margin-top:10px;margin-right:20px;">
+    <a href="http://github.com/unameit10000000/" target="_blank">
+        <img src="../static/github.png" width="75px;"/>
+    </a>
+  </div>  
+  <h1 class="title">Tweetor</h1>
+  <br/>
+  <form method="POST">
+    <div class="form-inline">
+      <p class="title"><strong>Local URL Example:</strong><p>
+        <p>http://127.0.0.1:5500/authenticate/</p>
+        <p class="title"><strong>Akash URI Example:</strong><p>
+          <p>http://your-akash-uri.eu-west01-akash.provider.com/authenticate/</strong></p>      
+          <br/>
+          <div class="form-group">
+            <input class="line-input" type="text" name="callback" placeholder="http://your-callback-url.com/authenticate/">
+          </div>
+        </div>
+        <div>
+          <button class="button" type="submit" class="">Authorize</button>
+      </div>
+    </form>
+</body>
+</html>

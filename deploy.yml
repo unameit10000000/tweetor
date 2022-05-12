@@ -1,0 +1,42 @@
+---
+version: "2.0"
+
+services:
+  web:
+    image: <dckr_username>/<image-tag:version>
+    expose:
+      - port: 5500
+        as: 80
+        to:
+          - global: true
+    env:
+      - PORT=5500
+      - TWITTER_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      - TWITTER_API_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      - TWITTER_BEARER_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      - GPT_ORG_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      - GPT_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+profiles:
+  compute:
+    web:
+      resources:
+        cpu:
+          units: 0.5
+        memory:
+          size: 512Mi
+        storage:
+          size: 512Mi
+
+  placement:
+    dcloud:
+      pricing:
+        web:
+          denom: uakt
+          amount: 1000
+
+deployment:
+  web:
+    dcloud:
+      profile: web
+      count: 1
