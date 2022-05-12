@@ -7,8 +7,7 @@ Basic Twitter Bot to automate Tweets. Uses OpenAI's GPT-3 to randomize messages.
 This example is tested on Linux.
 
 ### Live Demo
-MetaBrainz active twitter bot is based on this example! Checkout: https://twitter.com/metabrainz_io
-
+MetaBrainz active Twitterbot is based on this example! Example <code><a href="https://twitter.com/metabrainz_io/status/1524751303343104004">Tweet</a></code>
 ## Requirements
  -  Account for <code><a href="https://hub.docker.com/">Docker Hub</a></code>
  -  Account for <code><a href="https://developer.twitter.com">Twitter Developer</a></code>
@@ -39,7 +38,7 @@ sudo make up
 ### Once running
 1. Go to: `http://127.0.0.1:5500/`
 2. Insert callback url `http://127.0.0.1:5500/authenticate/`
-3. Authorize using twitter
+3. Authorize using Twitter
 4. Call some endpoints (using curl, postman, etc)
 ## Test On Akash
 Get started with Akash <code><a href="https://docs.akash.network/">Docs</a></code> 
@@ -60,7 +59,7 @@ Additionally replace the `image` value.
 ### Once deployed:
 1. Go to Akash uri, for example: `http://your-akash-uri.eu-west01-akash.provider.com`
 2. Insert callback uri, for example: `http://your-akash-uri.eu-west01-akash.provider.com/authenticate/`
-3. Authorize using twitter
+3. Authorize using Twitter
 4. Call some endpoints (using curl, postman, etc)
 5. NOTE: Do not share your public domain (Akash uri) when using this example template!
 
