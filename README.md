@@ -15,7 +15,7 @@ MetaBrainz active Twitterbot is based on this example! Example <code><a href="ht
  -  Download/Install <code><a href="https://www.akashlytics.com/deploy">Akashlythics</a></code>
  -  Download/Install <code><a href="https://docs.docker.com/get-docker/">Docker</a></code>
 
-## Preperation
+## Preparation
 1. Configure accounts
 2. Get the required keys for the environment variables:
 - `TWITTER_API_KEY`
