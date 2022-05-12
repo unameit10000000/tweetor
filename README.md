@@ -7,13 +7,13 @@ Basic Twitter Bot to automate Tweets. Uses OpenAI's GPT-3 to randomize messages.
 This example is tested on Linux.
 
 ### Live Demo
-MetaBrainz active Twitterbot is based on this example! Example <code><a href="https://twitter.com/metabrainz_io/status/1524751303343104004" target="_blank">Tweet</a></code>
+MetaBrainz active Twitterbot is based on this example! Example <code><a href="https://twitter.com/metabrainz_io/status/1524751303343104004">Tweet</a></code>
 ## Requirements
- -  Account for <code><a href="https://hub.docker.com/" target="_blank">Docker Hub</a></code>
- -  Account for <code><a href="https://developer.twitter.com" target="_blank">Twitter Developer</a></code>
- -  Account for <code><a href="https://openai.com/api/" target="_blank">OpenAI API</a></code>
- -  Download/Install <code><a href="https://www.akashlytics.com/deploy" target="_blank">Akashlythics</a></code>
- -  Download/Install <code><a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a></code>
+ -  Account for <code><a href="https://hub.docker.com/">Docker Hub</a></code>
+ -  Account for <code><a href="https://developer.twitter.com">Twitter Developer</a></code>
+ -  Account for <code><a href="https://openai.com/api/">OpenAI API</a></code>
+ -  Download/Install <code><a href="https://www.akashlytics.com/deploy">Akashlythics</a></code>
+ -  Download/Install <code><a href="https://docs.docker.com/get-docker/">Docker</a></code>
 
 ## Preperation
 1. Configure accounts
@@ -41,7 +41,7 @@ sudo make up
 3. Authorize using Twitter
 4. Call some endpoints (using curl, postman, etc)
 ## Test On Akash
-Get started with Akash <code><a href="https://docs.akash.network/" target="_blank">Docs</a></code> 
+Get started with Akash <code><a href="https://docs.akash.network/">Docs</a></code> 
 ### Build & Push Docker Image
 Edit the `Makefile` and replace: `<dckr_username>/<image-tag:version>`
 #### CLI
