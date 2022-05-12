@@ -2,9 +2,9 @@
 =================================
 DISCLAIMER
 ---------------------------------
+Do not share your public domain (Akash uri) when using this example template! 
 This is a basic example that is coded in one go and meant for experimental purposes only. 
-The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. 
-Use at your own risk.
+The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. Use at your own risk.
 
 AUTHOR
 ---------------------------------

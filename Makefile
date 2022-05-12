@@ -1,3 +1,5 @@
+default: build up
+
 up:
 	docker run --rm -it -p 5500:5500 --env-file .localtest tweetor/web
 

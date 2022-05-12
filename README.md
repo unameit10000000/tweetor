@@ -62,6 +62,7 @@ Additionally replace the `image` value.
 2. Insert callback uri, for example: `http://your-akash-uri.eu-west01-akash.provider.com/authenticate/`
 3. Authorize using twitter
 4. Call some endpoints (using curl, postman, etc)
+5. NOTE: Do not share your public domain (Akash uri) when using this example template!
 
 ## Endpoints
 - `/create_tweetor`
@@ -99,4 +100,4 @@ http://127.0.0.1:5500/remove_tweetor/mytweetor
 http://127.0.0.1:5500/remove_all
 ```
 ## DISCLAIMER
-This is a basic example that is coded in one go and meant for experimental purposes only. The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. Use at your own risk.
+Do not share your public domain (Akash uri) when using this example template! This is a basic example that is coded in one go and meant for experimental purposes only. The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. Use at your own risk.

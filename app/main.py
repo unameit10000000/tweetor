@@ -2,9 +2,9 @@
 =================================
 DISCLAIMER
 ---------------------------------
+Do not share your public domain (Akash uri) when using this example template! 
 This is a basic example that is coded in one go and meant for experimental purposes only. 
-The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. 
-Use at your own risk.
+The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. Use at your own risk.
 
 AUTHOR
 ---------------------------------
@@ -265,12 +265,15 @@ def create_tweetor():
     print(interval['days'],interval['hours'],interval['minutes'],interval['seconds'])
 
     try:
-        # Create Default Tweetor Job
+        # Default Tweetor Job
         if ttype == 0:
+
+            # Handle errs here before passing job data
+            # ...
+
+            # Create
             tweetor = scheduler.add_job(
                     func=tweetor_default,
-                    start_date=interval['start_date'],
-                    end_date=interval['end_date'],
                     seconds=interval['seconds'],
                     minutes=interval['minutes'],
                     hours=interval['hours'],
@@ -280,9 +283,18 @@ def create_tweetor():
                     replace_existing=False,
                     args=("tweet", tmessage, gpt_use, gpt_prompt, gpt_prompt_topic)
             )
-        
-        # Create Custom Tweetor Job
+        # Custom Tweetor Job
         else:
+
+            # Handle errs here before passing job data
+            start_date = interval['start_date']
+            end_date = interval['end_date']
+            if len(start_date) < 19:
+                raise Exception(f"Invalid start_date format '{start_date}'")
+            if len(end_date) < 19:
+                raise Exception(f"Invalid end_date format '{end_date}'")
+
+            # Create
             tweetor = scheduler.add_job(
                     func=tweetor_countdown,
                     start_date=interval['start_date'],
@@ -296,8 +308,9 @@ def create_tweetor():
                     replace_existing=False,
                     args=("tweet", tmessage, interval['end_date'])
             )            
-    except:
-        return jsonify(success=False, error=f"Could not create Tweetor with id '{tname}'. Does it already exist?")
+    except Exception as e:
+        return jsonify(
+            success=False, error=f"Could not create Tweetor with id '{tname}'. Details: {e}")
     return jsonify(success=True, new_tweetor=tweetor.name)
 
 
