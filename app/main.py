@@ -215,7 +215,7 @@ def remove_tweetor(id):
         scheduler.remove_job(id)
     except:
         return jsonify(success=False, error=f"Could not remove Tweetor with id '{id}'. Does it exist?")
-    return jsonify(success=True, tweetor=id)
+    return jsonify(success=True, message=f"Successfully removed Tweetor with id '{id}'.")
 
 
 """

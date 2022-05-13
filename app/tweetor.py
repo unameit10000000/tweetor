@@ -92,13 +92,6 @@ Func: Execute Tweet
 =================================
 """
 def tweet(access, message):
-    oauth1_user_handler = tweepy.OAuth1UserHandler(
-        consumer_key=config.API_KEY,
-        consumer_secret=config.API_SECRET,
-        access_token=access.oauth_access_key,
-        access_token_secret=access.oauth_access_key_secret
-    )
-
     try:
         client = tweepy.Client(
             consumer_key=config.API_KEY,
