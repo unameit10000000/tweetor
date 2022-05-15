@@ -101,4 +101,4 @@ http://127.0.0.1:5500/remove_tweetor/mytweetor
 http://127.0.0.1:5500/remove_all
 ```
 ## DISCLAIMER
-Do not share your public domain (Akash uri) when using this example template! This is a basic example that is coded hastily in one go and meant for experimental purposes only. The Author and Owner of this repository can not be held liable for any loss resulting from using this example code. Use at your own risk.
+Do not share your public domain (Akash uri) when using this example template! This is a basic example that is coded hastily in one go and meant for experimental purposes only. The Author and Owner of this repository can not be held liable for any loss resulting from using this code. It is rumored that using GPT-3 for twitter goes against OpenAI's TOS. Use at your own risk.
