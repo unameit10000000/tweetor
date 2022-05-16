@@ -3,11 +3,12 @@
 </p>
 
 # Tweetor
-Basic Twitterbot to automate Tweets. Uses OpenAI's GPT-3 to randomize messages. Hosted on Akash Decentralized Cloud.
+Basic Twitterbot Manager to create automated Tweets. Uses OpenAI's GPT-3 to randomize messages. Hosted on Akash Decentralized Cloud.
 This example is tested on Ubuntu.
-
-### Live Demo
-MetaBrainz active Twitterbot is based on this example! Example <code><a href="https://twitter.com/metabrainz_io/status/1524751303343104004">Tweet</a></code>
+### Example
+MetaBrainz active Twitterbot is based on this example! See <code><a href="https://twitter.com/metabrainz_io/status/1524751303343104004">Tweet</a></code>
+## NOTE
+Do not share your public domain (Akash uri) when using this example template! This is a basic example that is coded hastily in one go and meant for experimental purposes only. The Author and Owner of this repository can not be held liable for any loss resulting from using this code. It is rumored that using GPT-3 for twitter goes against OpenAI's TOS. Use at your own risk.
 ## Requirements
 #### Minimum:
  -  <code><a href="https://docs.docker.com/engine/install/">Docker</a></code>
